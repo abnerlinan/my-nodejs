@@ -1,0 +1,21 @@
+<% layout('layout') -%>
+<div class="row">
+  <div class="span9">
+    <h1><%= title %></h1>
+    <ul class="unstyled">
+      <% for(var i=0; i<5; i++) { %>
+        <li class="row">
+          <div class="span7">
+            <p><a href="/wish?id=<%= i %>">list</a><small class="float-r">2013-03-03</small></p>
+          </div>
+          <div class="span2">
+            <div class="progress small">
+              <div class="bar" style="width: 60%;"></div>
+            </div>
+          </div>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</body>
